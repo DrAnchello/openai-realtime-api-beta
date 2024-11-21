@@ -1,0 +1,24 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --aida-gradient: linear-gradient(
+    45deg,
+    rgb(255, 136, 204, 0.1),
+    rgb(147, 112, 219, 0.1),
+    rgb(176, 224, 230, 0.1)
+  );
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: var(--aida-gradient);
+}
+
+.glass-effect {
+  backdrop-filter: blur(8px);
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
